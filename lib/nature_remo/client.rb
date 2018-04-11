@@ -35,8 +35,8 @@ module NatureRemo
     def get_token
       return ENV['NATURE_TOKEN'] if ENV['NATURE_TOKEN'] == true
 
-      json = JSON(File.read(File.expand_path('~/.nature')))
-      json['token']
+      return json['token'] if json = JSON(File.read(File.expand_path('~/.nature')))
+      Launchy.open https://home.nature.global
     end
 
   end

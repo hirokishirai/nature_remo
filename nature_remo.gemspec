@@ -35,4 +35,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "faraday", "~> 0.14.0"
   spec.add_runtime_dependency "thor", "~> 0.20.0"
   spec.add_runtime_dependency "launchy", "~> 2.4.3"
+  spec.add_runtime_dependency "oauth", "~> 0.5.4"
 end
